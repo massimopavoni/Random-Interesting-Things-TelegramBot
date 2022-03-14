@@ -1,5 +1,4 @@
 import os
-import glob
 from importlib import import_module
 
 from telegram.ext import Updater, Filters
@@ -9,10 +8,10 @@ admin_user_filter = Filters.user(user_id=int(os.getenv('TELEGRAM_ADMIN_USER_ID')
 
 
 def load_handlers(dispatcher):
-    for file_name in glob.glob('bot/handlers/*.py'):
-        handler_module, _ = os.path.splitext(file_name.split('/')[-1])
-        module = import_module(f'.{handler_module}', 'handlers')
-        module.init(dispatcher, admin_user_filter)
+    module = import_module(f'.post', 'handlers')
+    module.init(dispatcher, admin_user_filter, updater.job_queue)
+    module = import_module(f'.core', 'handlers')
+    module.init(dispatcher, admin_user_filter)
 
 
 if __name__ == '__main__':

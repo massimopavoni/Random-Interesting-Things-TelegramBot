@@ -1,0 +1,12 @@
+{
+  "post_message": "Available actions for posting on the channel:",
+  "list_posts_button": "List posts",
+  "new_post_button": "New post",
+  "no_posts_message": "No posts available.",
+  "back_to_post_button": "Go back to post actions",
+  "view_post_button": "View",
+  "publish_post_button": "Publish",
+  "schedule_post_button": "Schedule",
+  "edit_post_button": "Edit",
+  "delete_post_button": "Delete"
+}
