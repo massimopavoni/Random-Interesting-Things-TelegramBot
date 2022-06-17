@@ -29,7 +29,6 @@ jobs:
             TOKEN=${{ secrets.TELEGRAM_BOT_TOKEN }}
             ADMIN=${{ secrets.TELEGRAM_ADMIN_USER_ID }}
             CHANNEL=${{ secrets.TELEGRAM_CHANNEL_ID }}
-            LINKS_KEY=${{ secrets.KUTT_API_KEY }}
 
       - name: Deploy on VPS
         uses: appleboy/ssh-action@master

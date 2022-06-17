@@ -1,4 +1,4 @@
-FROM python:3.10.2-slim-buster
+FROM python:3.10-slim-buster
 
 WORKDIR Random-Interesting-Things-TelegramBot
 
@@ -14,6 +14,5 @@ ARG LINKS_KEY
 ENV TELEGRAM_BOT_TOKEN=$TOKEN
 ENV TELEGRAM_ADMIN_USER_ID=$ADMIN
 ENV TELEGRAM_CHANNEL_ID=$CHANNEL
-ENV KUTT_API_KEY=$LINKS_KEY
 
 CMD [ "python", "bot/main.py" ]

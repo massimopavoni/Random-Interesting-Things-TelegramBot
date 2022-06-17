@@ -9,7 +9,7 @@ admin_user_filter = Filters.user(user_id=int(os.getenv('TELEGRAM_ADMIN_USER_ID')
 
 def load_handlers(dispatcher):
     module = import_module(f'.post', 'handlers')
-    module.init(dispatcher, admin_user_filter, updater.job_queue)
+    module.init(dispatcher, admin_user_filter)
     module = import_module(f'.core', 'handlers')
     module.init(dispatcher, admin_user_filter)
 
@@ -18,3 +18,4 @@ if __name__ == '__main__':
     updater = Updater(token=token, use_context=True)
     load_handlers(updater.dispatcher)
     updater.start_polling()
+    updater.idle()

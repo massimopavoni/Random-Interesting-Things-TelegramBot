@@ -1,4 +1,5 @@
 {
-  "start_message": "Hello there. This Telegram bot is only to be used to manage and admin the t.me/randominterestingthings channel.\nUse /post to view available actions.",
+  "version": "1.0.0",
+  "start_message": "Random Interesting Things TelegramBot - version 1.0.0\nHello there. This Telegram bot is only to be used to manage and admin the t.me/randominterestingthings channel.\nUse /list to view currently scheduled posts.\nUse /post to schedule a new post.",
   "unknown_message": "Sorry, I don't understand that command."
 }
