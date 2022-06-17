@@ -1,0 +1,14 @@
+{
+  "list_posts_message": "Scheduled posts:",
+  "no_posts_message": "No scheduled posts.",
+  "new_post_message": "Now scheduling a new post.",
+  "new_post_cancelled_message": "New post scheduling cancelled.",
+  "new_post_title_message": "Type post title:",
+  "new_post_credit_message": "Type post credit:",
+  "new_post_image_message": "Attach post image:",
+  "new_post_links_message": "Type post links, separated by commas, with optional type separated by \" is \" (e.g. \"www.example.com,www.example.com/page is page\"):",
+  "new_post_brief_message": "Type post brief:",
+  "new_post_tags_message": "Type post tags, separated by commas (e.g. \"tag1,tag2,tag3\"):",
+  "new_post_schedule_message": "Type post schedule, with format yyyy-MM-dd (e.g. 2022-06-17):",
+  "new_post_saved_message": "Post saved and scheduled."
+}

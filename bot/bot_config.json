@@ -1,0 +1,9 @@
+{
+  "name": "Random-Interesting-Things-TelegramBot",
+  "version": "0.1.0",
+  "url": "https://github.com/massimopavoni/Random-Interesting-Things-TelegramBot",
+  "license": "GNU General Public License v3.0",
+  "author": "Massimo Pavoni",
+  "author_email": "maspavoni@gmail.com",
+  "description": "Telegram bot helper for personal channel"
+}

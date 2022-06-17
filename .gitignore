@@ -248,3 +248,5 @@ cython_debug/
 
 # Project excluded directories/files
 venv_testing.sh
+sonarqube-scan.sh
+.scannerwork
