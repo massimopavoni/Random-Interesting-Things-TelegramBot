@@ -39,7 +39,6 @@ def init(dispatcher: Dispatcher, admin_user_filter):
                 SCHEDULE: [MessageHandler(Filters.text, post_schedule)]},
         fallbacks=[CommandHandler('cancel', cancel, filters=admin_user_filter)]))
     target_time = time(hour=16, minute=32, second=48, tzinfo=utc)
-    target_time = time(hour=17, minute=00, second=15, tzinfo=utc)
     dispatcher.job_queue.run_daily(post_to_channel, target_time, days=(0, 1, 2, 3, 4, 5, 6))
 
 
